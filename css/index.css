@@ -1,0 +1,388 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    line-height: 1.2rem;
+    font-size: 0.6rem;
+    font-family: Arial, "Microsoft YaHei"/*Helvetica*/;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-style: normal;
+    margin: 0;
+}
+.xn-bg h2{
+font-size:1.7rem;
+font-weight:600;
+color:#2c2c2c;
+}
+ul {
+    list-style-type: none;
+}
+
+ul>li {
+    float: left;
+}
+
+header {
+    width: 100%;
+}
+/* Swiper轮播图 */
+#carousel1 .swiper-container {
+    width: 100%;
+  }
+ .swiper-slide {
+    text-align: center;
+  }
+  #carousel1 .swiper-slide img{
+    width:100%;
+  }
+
+
+#xn-content {
+    width: 50rem;
+    margin: 0 auto;
+}
+
+
+#xn-content .xn-ternav {
+    height: 11rem;
+    width: 50rem;
+    display: flex;
+    padding: 1.5rem 0;
+}
+
+#xn-content .xn-ternav>li {
+    width: 25rem;
+    text-align: center;
+}
+
+#xn-content>.xn-ternav>.xn-method>img{
+    -webkit-transition:transform 1s linear;   
+}
+#xn-content>.xn-ternav>.xn-method>img:hover{
+    transform:rotate(360deg);
+}
+
+
+#xn-content .xn-ternav>li h3 {
+    font-weight: normal;
+    color: #9a9a9a;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+/* <!-- 关于我们 --> */
+.xn-us-bg{
+    width:100%;
+    background:#f4f4f4 ;
+    height:25rem;
+}
+
+#xn-about-us {
+    width: 100%;
+    /* background: #f4f4f4; */
+    height: 25rem;
+    padding: 3.5rem;
+    color: #9a9a9a;
+}
+
+#xn-about-us .xn-about1 {
+    width: 23rem;
+    height: 15rem;
+    float: left;
+}
+
+
+
+
+#xn-about-us h4 {
+    font-size: 1.1rem;
+    margin-top: 0.7rem;
+}
+
+#xn-about-us p {
+    margin-top: 1rem;
+    font-size: 0.75rem;
+    word-wrap: break-word;
+}
+
+
+
+#xn-about-us .xn-about2 {
+    height: 1.3rem;
+    float:right;
+}
+
+#xn-about-us .xn-about2 img {
+    /* width:26.5em; */
+    height: 12rem;
+}
+
+
+.xn-bg {
+    width: 50rem;
+    margin: 0 auto;
+}
+
+.xn-bg h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #2c2c2c;
+}
+
+.xn-bg span {
+    font-size: 1.1rem;
+    margin-top: 0.85rem;
+    display: inline-block;
+    color: #9a9a9a;
+}
+
+/* <!-- 创始团队--> */
+
+#xn-teams>div {
+    width: 50rem;
+    margin: 0 auto;
+    color: #9a9a9a;
+    padding: 3.5rem 0;
+    position: relative;
+}
+
+
+#xn-teams .xn-little {
+    width: 100%;
+    height: 8rem;
+    box-shadow: 0 5px 6px 0 rgba(12, 12, 12, 0.1);
+    position: absolute;
+    top: -5rem;
+    z-index: 100;
+    background: #fff;
+    padding-top: 1.8rem;
+}
+
+
+#xn-teams .xn-bg>.xn-little>.xn-tips {
+    /* display: flex; */
+}
+
+#xn-teams  .xn-tip img{
+    transition:transform 1s linear;
+    margin-top:-1rem;
+ }
+ #xn-teams  .xn-bg .xn-tip img:hover{
+    transform:rotateY(360deg);
+ }
+ 
+#xn-teams .xn-bg .xn-little .xn-tips li {
+    flex: 1;
+    border-right: 2px solid #a8a8a8;
+    height: 5rem;
+    text-align: center;
+    width:25%;
+    line-height: 5rem;
+    padding-right: 0rem;
+    margin-top:-0.2rem;
+}
+
+
+#xn-teams .xn-little .xn-tips li span {
+    font-size: 0.5rem;
+    margin-top: -3.7rem;
+    display: block;                  
+}
+
+
+#xn-teams .xn-little .xn-tips li:last-child {
+    border-right: 0;
+}
+
+
+#xn-teams span {
+    font-size: 1.1rem;
+    margin-top: 0.85rem;
+    display: inline-block;
+}
+
+#xn-teams .xn-team-group {
+    display: flex;
+    padding: 0;
+}
+
+#xn-teams .xn-team-group li {
+  width:33%;
+    text-align: center;
+
+}
+
+#xn-teams h4 {
+    font-weight: 600;
+    color: #2c2c2c;
+    text-align: center;
+}
+
+
+#xn-teams p {
+    border-right: 2px solid #9a9a9a;
+    color: #9a9a9a;
+    font-size: 0.75rem;
+    padding: 0 0.85rem;
+    text-align: left;
+    margin-top: 1rem;
+    height:5rem;
+}
+
+#xn-teams .xn-pro3 p {
+    border-right: 0;
+}
+
+/* <!-- 成长历程--> */
+
+#xn-growth {
+    background: #f4f4f4;
+    margin: 0 auto;
+    color: #9a9a9a;
+    padding: 3.5rem 0;
+}
+
+#xn-growth h4 {
+    color: #2c2c2c;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+#xn-growth .xn-growthcont {
+    height: 7.3rem;
+    width: 42rem;
+    margin: 0 auto;
+}
+
+/* 左边圆圈 */
+
+#xn-growth .xn-growthcont .xn-growthcontlispan {
+    border: 2px solid #6883f5;
+    border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    text-align: center;
+    padding-top: 2rem;
+    display: inline-block;
+}
+
+#xn-growth .xn-growthcont .xn-lol {
+    float: left;
+}
+
+#xn-growth .xn-growthcont .xn-growthcontli {
+    position: relative;
+    border-top: 2px solid #6883f5;
+    border-bottom: 2px solid #6883f5;
+    width: 33rem;
+    height: 7rem;
+    top: 0.85rem;
+    left: 3.5rem;
+    text-align: center;
+}
+
+#xn-growth .xn-bg>div:nth-child(5) {
+    position: relative;
+    top: -0.8rem;
+}
+
+/* 右边圆圈 */
+
+#xn-growth .xn-growthcont .xn-rf>span {
+    position: relative;
+    top: -1rem;
+}
+
+#xn-growth .xn-bg>div:nth-child(even) {
+    position: relative;
+    top: -0.4rem;
+}
+
+#xn-growth .xn-growthcont .xn-growthcontli div[class=odd] {
+    position: relative;
+    left: -3.3rem;
+}
+
+#xn-growth .xn-bg>div:nth-child(6) {
+    position: relative;
+    top: -1.2rem;
+}
+
+#xn-growth .xn-bg>div:nth-child(7) {
+    position: relative;
+    top: -1.6rem;
+}
+
+#xn-growth .xn-growthcont .xn-lor {
+    position: relative;
+    float: right;
+    top: -7rem;
+    right: 2.5rem;
+}
+
+/* 团队风采 */
+
+#xn-sprit .xn-bg{
+    margin: 0 auto;
+    margin: 0 auto;
+    color: #9a9a9a;
+    padding: 3.5rem 0;
+}
+
+
+#xn-sprit .swiper-container img {
+    height: 20rem;
+    margin: 0 auto;
+}
+
+#xn-sprit .swiper-container p {
+    position: relative;
+    color: #5d85e2;
+    font-size: 0.9rem;
+    margin: 1rem auto;
+    text-align:left;
+    left:7.3rem;
+}
+#xn-sprit .swiper-container{
+    position: relative;
+}
+#xn-sprit .swiper-container .swiper-pagination{
+    position: relative;
+    bottom:5rem;
+}
+
+#xn-sprit .swiper-container .swiper-button-prev{
+    position: absolute;
+    left:8rem;
+    top:41%;
+
+}
+#xn-sprit .swiper-container .swiper-button-next{
+    position: absolute;
+    right:8rem;
+    top:41%;
+}
+
+/* 团队风采 */
+#xn-concat>.xn-bg>.address{
+    margin-top:2rem;
+}
+#xn-concat>.xn-bg p{
+    position: relative;
+    color:#9a9a9a;
+    font-size: 0.75rem;
+    margin:0;
+    padding:0;
+
+}

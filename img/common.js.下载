@@ -1,0 +1,132 @@
+/**
+ * Created by Administrator on 2017/6/20.
+ */
+$(function () {
+    var swidth=$("body").width(); //body宽度
+    if (swidth < 1000) {     //body宽度小于1000执行
+        swidth = 1000;
+        /*导航*/
+        $(".nav_box").click(function(){
+            var ul = $(".nav");
+            if(ul.css("display")=="none"){
+                ul.slideDown("fast");
+                //$('#result').css('height',$(window).height()).show();
+                $(this).addClass("nav_box2");
+            }else{
+                ul.slideUp("fast");
+                //$('#result').hide();
+                $(".nav_box").removeClass("nav_box2");
+            }
+        });
+    }
+
+        /*轮播图*/
+    /*var swiper = new Swiper('.banner_box .swiper-container', {
+        pagination: '.banner_box .swiper-pagination',
+        loop:true,
+        paginationClickable: true,
+        autoplay : 4000, //可选选项，自动滑动
+        speed:600,//滚动速度
+        autoplayDisableOnInteraction : false,//注意此参数，默认为true
+    });*/
+
+    /*成功案例*/
+    /*var swiper = new Swiper('.product_box .swiper-container', {
+        pagination: '.product_box .swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 4,
+        paginationClickable: true,
+        spaceBetween: 30
+    });*/
+
+        $(window).resize(function () {
+        var offowis = $(window).width();
+
+        var farina = offowis / 1903;
+        var for_ola = 680 * farina;
+        $(".sample_box_img>img").css("height", for_ola);
+
+    });
+       $(window).resize(function () {
+        var offowis = $(window).width();
+
+        var farina = offowis / 1637;
+        var for_ola = 397 * farina;
+        $(".worth_box_img").css("height", for_ola);
+
+    });
+      $(window).resize(function () {
+        var offowis = $(window).width();
+
+        var farina = offowis / 1637;
+        var for_ola = 397 * farina;
+        $(".sample_box_new").css("height", for_ola);
+
+    });
+
+    // 2017/11/8start
+    $(".policy_imc").mouseover(function (e) {
+        var thi = this;
+        var thimg = $(thi).prev()
+
+        $(thimg).addClass("animation");
+    }).mouseout(function () {
+        $(".policy_iml").removeClass("animation");
+    });
+    $(".policy_imr").mouseover(function (e) {
+        var thi = this;
+        var thimg = $(thi).siblings()[0];
+
+        $(thimg).addClass("animation");
+    }).mouseout(function () {
+        $(".policy_iml").removeClass("animation");
+    });
+    // 2017/11/8end
+
+ $(".actionbar_li").on("touchstart", function () {
+
+        $(".mark").animate({
+            opacity: '0.7',
+
+        });
+
+
+        $(".popping").animate({
+
+            height: 'toggle'
+        });
+        $(".mark").toggle();
+    });
+
+
+    var a = 0;
+    $(".popping_x").on("touchstart", function () {
+
+        if (a == 0) {
+            $(".mark").animate({
+                opacity: '0.7',
+
+            });
+            a = 1;
+        }
+        if (a == 1) {
+            $(".mark").animate({
+                opacity: '0',
+
+            });
+            a = 0;
+        }
+
+
+
+        $(".popping").animate({
+
+            height: 'toggle'
+        });
+        $(".mark").toggle();
+    })
+
+
+});
+

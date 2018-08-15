@@ -1,0 +1,237 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0; padding:0; border:0;}
+html{font-size: 20px;}
+body{ line-height:24px; font-size: 12px; font-family:  Arial,"Microsoft YaHei"/*Helvetica*/;  min-width: 320px; }
+h1,h2,h3,h4,h5,h6,strong,em,b{ font-style: normal; font-weight: normal;}
+input, textarea, selet, option, button{outline: none;}
+input[type="submit"], input[type="reset"], input[type="button"], button { -webkit-appearance: none; /*去掉苹果的默认UI来渲染按钮*/}
+li{ list-style:none;}
+a{text-decoration:none; color:#454545;}
+a:hover{ color:#1f90e6;}
+/*body a{outline:none;blr:expression(this.onFocus=this.blur());}  去掉a标签点击后的虚线*/
+/* ----- clear fix for floats ----- */
+/* these styles instruct non-IE browsers to render container elements so that they fully enclose floats */
+/* without this class applied, a float might hang over the bottom border of it's container */
+.clearfix:after {content:"."; width:0; height:0; line-height:0; font-size:0; display:block; clear:both; visibility:hidden; overflow:hidden;margin:0;}
+.clearfix {display:inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide from IE-mac */
+
+/*头部*/
+.box{ max-width:1000px; margin:0 auto;}
+
+.top_box{ max-width: 1000px; margin:20px auto 15px; overflow: hidden;}
+.top_box .logo{ float:left; width:250px; height:50px; margin-right:25px; float: left;}
+.top_box .logo img{ width:250px; height:50px;background-size: 100% 100%}
+.top_box .nav_btn{ display: none;}
+.top_box .nav_box{ float: left;margin:12px auto 0; }
+.top_box .nav_box ul{ }
+.top_box .nav_box ul li{ float:left; height: 30px; line-height: 30px; margin:0 14px; }
+.top_box .nav_box ul li a{ color: #323232;    font-family:"Microsoft Yi Baiti"; font-size:16px;  padding: 0 5px; }
+.top_box .nav_box ul li:hover a,.top_box .nav_box ul li.active a{ color: #1f90e6; }
+
+.registration{  font-family: "Microsoft Yi Baiti"; float: right;margin:10px auto 0px; }
+.registration a{ margin: 0 5px; float: left; display:block;  width: 80px; font-size: 14px;height:30px;line-height:30px;border: solid 1px #1f90e6; background: #1f90e6; text-align: center; color: #ffffff; border-radius: 5px;}
+.registration a.btn{ border: solid 1px #1f90e6; background: none; color: #1f90e6;}
+/*案例和免费获取账号*/
+.sample_account_box{border-bottom: solid 1px #eaeaea; padding-bottom:40px; }
+.sample_account{ max-width:1000px; display:flex;margin:20px auto 0; flex-wrap: wrap; justify-content: space-around; }
+.more_sample{ width:25%;background: #FF6000; height: 40px; color: #fff; display:block; text-align: center;  line-height: 40px; border-radius:3px; color: #fff; padding: 0 20px; font-size: 16px; }
+.free_account{width:25%; background: #1d96f1; height: 40px;color: #fff; display:block; text-align: center;line-height: 40px; border-radius:3px; color: #fff;  padding: 0 20px; font-size: 16px; }
+.sample_account a:hover{ color: #fff; }
+
+/*底部*/
+/*.footer_box{ width: 100%; background:#171b36;}*/
+.footer{ max-width: 1000px; margin:30px auto 0;}
+.footer_nav{ overflow: hidden; position: relative;}
+.footer_nav dl:nth-child(1){ width:160px; float: left; }
+.footer_nav dl:nth-child(2){ width:160px; float: left;}
+.footer_nav dl:nth-child(3){ width:200px; float: left; }
+.footer_nav dl dd{  line-height:36px;}
+.footer_nav dl dd a{ color: #fff;font-size: 14px;  display: block;}
+/*.footer_nav dl dd a{ font-size: 16px;  display: block; float:left; width: 120px;}*/
+.footer_nav dl dd p{ font-size:16px;color: #fff;}
+.footer_nav dl dt{ height:56px; line-height:56px; font-size: 20px; color: #fff;}
+.footer_nav dl a:hover{ color:#1f90e6;}
+
+.weixin{ width: 380px; float: right; text-align: center; margin-top:5px; }
+.weixin img{ width:380px;}
+.weixin p{font-size: 14px; display: block;}
+.weixin p em{font-size: 14px; display: block; line-height: 20px;}
+
+.footer_filing{ height:65px; border-top: solid 1px #5a5f64; text-align: center;margin-top: 40px;}
+.footer_filing p{font-size: 12px;color:#fff;line-height:25px; /*padding: 15px 0;*/ margin-top:15px;}
+
+
+@media screen and (max-width:1000px) {
+    /*头部*/
+    .top_box{max-width: 100%; overflow: inherit;}
+    .top_box .logo{ margin-left:20px;}
+    .nav_box{ }
+    .top_box .nav_box{display:block; float: right; margin:14px 20px 0 0;background: url("../images/nav.png") left center no-repeat; display: block; width: 24px; height: 18px; position: relative;cursor: pointer;}
+    .top_box .nav_box.nav_box2{ display: block; background: url("../images/nav1.png") left center no-repeat;display: block; width: 24px; height: 18px; }
+    .top_box .nav_box .nav{display: none; z-index: 1000; background: #fff; border-top: solid 1px #1f90e6; position: absolute; right:-20px; top:50px; width: 130px; }
+    .top_box .nav_box.nav_box2 .nav{ display: block;}
+    .top_box .nav_box ul:before{position: absolute; top:-8px;right: 26px; border-bottom:8px solid #1f90e6;border-left:8px solid transparent;border-right:8px solid transparent;content:".";height:0;text-indent:-9999px;width:0;z-index:2;}
+
+    .top_box .nav_box ul li{ float:none; height:50px; line-height:50px; margin:0 14px; border-bottom: solid 1px #f2f2f2; }
+    .top_box .nav_box ul li:last-child{ border-bottom: none;}
+    .registration{ display: none;}
+
+    /*案例和免费获取账号*/
+    .sample_account_box{border-bottom: solid 1px #eaeaea; padding-bottom: 40px; }
+    .sample_account{max-width:100%; display:flex;margin:20px auto 0; flex-wrap: wrap; justify-content: space-around; }
+    .more_sample{ width:30%;background: #FF6000; height: 40px; color: #fff; display:block; text-align: center;  line-height: 40px; border-radius:3px; color: #fff; padding: 0 20px; font-size: 16px; }
+    .free_account{width:30%; background: #1d96f1; height: 40px;color: #fff; display:block; text-align: center;line-height: 40px; border-radius:3px; color: #fff;  padding: 0 20px; font-size: 16px; }
+    /*.sample_account a:hover{ color: #fff; background: #fb660d;}*/
+
+    /*底部*/
+    /*.footer_box{ width: 100%; background:#171b36;}*/
+    .footer{ max-width:100%; margin:0.8rem 0.25rem 2.8rem;}
+    .footer_nav{ overflow: hidden; position: relative;}
+    .footer_nav dl{ margin-bottom: 25px;}
+    .footer_nav dl:nth-child(1){ width:50%; float: left; }
+    .footer_nav dl:nth-child(2){ width:50%; float: left;}
+    .footer_nav dl:nth-child(3){ width:40%; float: left; }
+    .footer_nav dl dd{  line-height:34px;}
+    .footer_nav dl dd a{ color: #fff;font-size: 16px;  display: block;}
+    .footer_nav dl dd a{ font-size: 16px;  display: block; float:left; width: 120px;}
+    .footer_nav dl dd p{ font-size:16px;color: #fff;}
+    .footer_nav dl dt{ height: 46px; line-height:46px; font-size: 20px; color: #fff;}
+    .footer_nav dl a:hover{ color:#1f90e6;}
+
+    .weixin{ width:8.107rem; float: right; text-align: center; margin-top:5px; }
+    .weixin img{ width:8.107rem; height: 3.67rem; }
+
+    .footer_filing{ height:50px; border-top: solid 1px #5a5f64; text-align: center;margin-top: 40px;}
+    .footer_filing p{font-size: 12px;color:#fff;line-height:25px; /*padding: 15px 0;*/ }
+
+}
+
+
+
+@media screen and (max-width:750px) {
+    .top_box{max-width: 100%; overflow: inherit; margin:12px 0.35rem; }
+    .top_box .logo{ margin-left:0px;}
+    .nav_box{ }
+    .top_box .nav_box{display:block; float: right; margin-top:16px; margin-right: 0px;}
+    .top_box .nav_box .nav{display: none; z-index: 1000; background: #fff; border-top: solid 1px #1f90e6; position: absolute; right:-0.5rem; top:45px; width:4rem;}
+    .top_box .nav_box ul li{ float:none; height:1.4rem; line-height:1.4rem; margin:0 0.3rem; }
+    .top_box .nav_box ul li a{ color: #323232;    font-family:"Microsoft Yi Baiti"; font-size:0.5rem;  padding: 0 0.2rem; }
+    .top_box .nav_box ul:before{position: absolute; top:-8px;right:0.65rem; border-bottom:8px solid #1f90e6;border-left:8px solid transparent;border-right:8px solid transparent;content:".";height:0;text-indent:-9999px;width:0;z-index:2;}
+
+    /*案例和免费获取账号*/
+    .sample_account_box{border-bottom: solid 1px #eaeaea; padding-bottom:1rem; }
+    .sample_account{max-width:100%; display:flex;margin:0.5rem auto 0; flex-wrap: wrap; justify-content: space-around; }
+    .more_sample{ width:60%;background: #FF6000; height:1.6rem; color: #fff; display:block; text-align: center;  line-height:1.6rem; border-radius:4px; color: #fff; padding: 0 0; font-size: 0.5rem; margin-bottom:0.5rem; }
+    .free_account{width:60%; background: #1d96f1;  height:1.6rem; color: #fff; display:block; text-align: center;  line-height:1.6rem; border-radius:4px; color: #fff; padding: 0 0; font-size: 0.5rem; }
+    /*.sample_account a:hover{ color: #fff; background: #fb660d;}*/
+
+
+    /*底部*/
+    /*.footer_box{ width: 100%; background:#171b36;}*/
+    .footer{ max-width:100%; margin:0.8rem 0.6rem 2.8rem;}
+    .footer_nav{ overflow: hidden; position: relative;}
+    .footer_nav dl{ margin-bottom: 0.3rem;}
+    .footer_nav dl:nth-child(1){ width:100%; float: left; }
+    .footer_nav dl:nth-child(2){ width:100%; float: left;}
+    .footer_nav dl:nth-child(3){ width:100%; float: left; }
+    .footer_nav dl dd{  line-height:34px;}
+    .footer_nav dl dd a{ color: #fff;font-size:14px;  display: block;}
+    .footer_nav dl dd a{ font-size:14px;  display: block; float:left; width:25%;}
+    .footer_nav dl dd p{ font-size:14px;color: #fff; display: block;}
+    .footer_nav dl dt{ height: 46px; line-height:46px; font-size: 18px; color: #fff;}
+    .footer_nav dl a:hover{ color:#1f90e6;}
+
+    .weixin{ width:315px; float: none; margin: 0 auto; text-align: center; margin-top:20px; clear:left;}
+    .weixin img{ width:315px; height:170px; }
+
+    .footer_filing{ height:65px; border-top: solid 1px #5a5f64; text-align: center;margin-top: 40px;}
+    .footer_filing p{font-size: 12px;color:#fff;line-height:25px; /*padding: 15px 0;*/ }
+
+
+}
+
+
+/*@media only screen and (max-width:480px) {*/
+    /*!*顶部*!*/
+    /*.top_box{max-width: 100%; overflow: inherit; margin:15px 0.5rem; }*/
+    /*.top_box .nav_box .nav{display: none; z-index: 1000; background: #fff; border-top: solid 1px #1f90e6; position: absolute; right:-0.5rem; top:39px; width:4rem;}*/
+    /*.top_box .nav_box ul li a{ color: #323232;    font-family:"Microsoft Yi Baiti"; font-size:0.5rem;  padding: 0 0.2rem; }*/
+    /*!*底部*!*/
+    /*.footer_nav dl{ margin-bottom: 20px;}*/
+    /*.footer_nav dl.dl1{ width:100%; float:none; margin-right:0;}*/
+    /*.footer_nav dl.dl2{ width:100%; float: none; margin-right:0;}*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
